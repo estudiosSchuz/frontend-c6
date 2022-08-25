@@ -1,0 +1,105 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+header {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 19px;
+  padding: 10px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.ul-header{
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 8px;
+}
+
+footer {
+    background-color: #222222;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.ul-footer{
+    list-style: none;
+    padding-left: 15px;
+}
+
+.font-rojo {
+    color: red;
+}
+
+.font-blanco {
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content:space-around;
+    padding: 50px 0px;
+}
+.h2-div {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.h2-delivery {
+    display: inline;
+    font-size: 30px;
+}
+
+.delivery {
+    border-radius: 5px;
+    background-image: url(./img/delivery.jpg);
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+ol{
+    font-weight: bold;
+}
+
+.podio-h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.h3-podio {
+    text-align: center;
+    font-size: 24px;
+}
+.podio-fondo {
+    background-color: white;
+    padding: 20px 50px;
+}
+.podio-pizzas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pizza {
+    margin-left: 100px;
+}
