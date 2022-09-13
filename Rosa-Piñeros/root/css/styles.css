@@ -1,0 +1,498 @@
+/*estilos generales: botones,body,titulos*/
+@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap%27);
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #242E53;
+    
+}
+
+.button {
+    background-color: #8B48BF;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#button-white {
+    background-color: white;
+    color: #8B48BF;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button-list {
+    background-color: #8B48BF;
+    color: white;
+    padding: 12px 25px;
+    border: none; 
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-small {
+    background-color: #8B48BF;
+    color: white;
+    padding: 8px 25px;
+    border: none; 
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+.button:hover {
+    opacity: 70%;
+}
+/*fin estilos generales*/
+
+
+/*estilos del header*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 14vh;
+    padding: 0 5% 0 5%;
+}
+
+.ul-header {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ul-header li {
+    padding: 20px;
+}
+
+.a-nav-header {
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #242E52;
+}
+
+.a-nav-header:hover{
+    opacity: 60%;
+}
+
+.fa-bars {
+    font-size: 3rem;
+    display: none;
+}
+
+@media(max-width:480px){
+    header {
+        justify-content: space-between;
+        padding: 10% 11% 0 11%;
+        height: 20%;
+    }
+
+    #button-header {
+        display: none;
+    }
+    
+    header nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+}
+/*fin estilos del header*/   
+
+
+/*estilos del main*/
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 11% 3% 11%;
+}
+.main-section-1{
+    flex-direction: column;
+    width: 50%;
+}
+
+.main-section-1 h1 {
+    font-size: 58px;
+    margin: 0;
+}
+
+.main-section-1 p {
+    width: 65%;
+    padding-bottom: 10px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.main-section-2 img{
+    width: 100%;
+}
+
+@media(max-width:480px){
+    main {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .main-section-2{
+        padding: 0 11% 40% 11%;
+    }
+
+    .main-section-1{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        padding-bottom: 25%;
+    }   
+
+    .main-section-1 h1{
+        font-size: 50px;
+    }
+
+    .main-section-1 p{
+        text-align: center;
+        width: 72%;
+    }
+}
+/*fin estilos del main*/
+
+
+/*estilos de la primera section*/
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 11% 0 11%;
+    background-color: white;
+}
+
+.art1-section-2 h2{
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.art1-section-2 p{
+    line-height: 24px;
+    padding-right: 20%;
+}
+
+.div-art2-sect2{
+    display: flex;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 1.5% 3% 25%;
+}
+
+.div-art2-sect2 h5{
+    font-weight: 400;
+    margin-top: 8px;
+    color: #323851;
+}
+
+.div-art2-sect2 p{
+    color: #B9B9C1;
+}
+
+.container-text {
+    padding-left: 20px;
+}
+
+.h5-mobile {
+    display: none;
+}
+
+@media(max-width:480px){
+    .section-2 {
+        flex-direction: column;
+        padding: 0;
+    }    
+
+    .art1-section-2{
+        text-align: center;
+        padding-bottom: 90px;
+    }
+
+    .art1-section-2 p{
+        padding: 0 10% 0 10%;
+    }
+
+    .div-art2-sect2{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container-text {
+        padding: 10px 50px 0 50px;
+    }
+    
+    .title-art2-sect2{
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        border-radius: 20px 0 0 20px;
+        background-color: #e7c9ff;
+    }
+    
+    .div-art2-sect2 h5{
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .h5-mobile {
+        display: block;
+    }
+
+    .h5-desktop{
+        display: none;
+    }
+}
+/*fin estilos de la primera section*/
+
+
+/*estilos de la section Cards*/
+.sectionCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6% 4% 6% 4%;
+}
+
+.cards-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.article-cards {
+    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    display: block;
+}
+
+.card2 {
+    line-height: 25px;
+    color: #B9B9C1;
+    background-color: #FAFAFA;
+    height: 210px;
+    padding: 40px 10px 0 10px;
+}
+
+.card2 p{
+    margin: 0;
+}
+
+.card2 h2 {
+    color: #3F4868;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.img-card {
+    position: relative;
+    top: 12%;
+    width: 70px;
+}
+
+@media(max-width:480px){
+    .desktop-card {
+        display: none;
+    }
+
+    .button-cards {
+        margin-bottom: 5%;
+    }
+}
+/*fin estilos de la section Cards*/
+
+
+/*estilos de la seccion 3*/
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B48BF;
+    padding: 2% 11%;
+}
+
+.section3 h2 {
+    color: white;
+    font-size: 40px;
+    width: 45%;
+}
+
+@media(max-width:480px){
+    .section3 {
+        flex-direction: column;
+        padding-bottom: 10%;
+        background-color: #8B48BF;
+    }
+    .section3 h2 {
+        text-align: center;
+        width: 95%;
+    }
+}
+/*fin estilos de la seccion 3*/
+
+
+/*estilos del footer*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color:#1E1E26;
+    padding: 3.3% 6%;
+}
+
+.section1-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section1-footer ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 38%;
+    padding: 0;
+}
+
+.section1-footer ul li{
+    margin: 6px;
+}
+
+.section2-footer  {
+    display: flex;
+}
+
+.ul1-footer ul {
+    padding: 0;
+    margin: 0 14vw 0 0;
+}
+
+.ul2-footer ul {
+    padding: 0;
+    margin: 0 6vw 0 0;
+}
+
+.section2-footer ul li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.section2-footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.section3-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section3-footer form{ 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section3-footer form input{
+    font-size: 13px;
+    margin-right: 10px;
+    border: none;
+    padding: 7% 30% 7% 4%;
+    border-radius: 20px;
+    color: #A0A0A0;
+}
+
+.section3-footer p{
+    font-size: 12.5px;
+    margin-top: 30%;
+    color: #8C8C94;
+}
+
+.copyright-mobile {
+    display: none;
+}
+
+@media(max-width:480px){
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 0;
+    }
+
+    .section1-footer {
+        order: 2;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .section1-footer ul{
+        margin: 0;
+    }
+
+    .section1-footer ul li{
+        margin: 32px;
+    }
+
+    .section2-footer {
+        order: 1;
+        margin-top: 60px;
+    }
+    .ul1-footer ul{
+        margin: 0 33vw 0 0;
+    }
+
+    .ul2-footer ul{
+        margin: 0;
+    }
+
+    .section3-footer{
+        order:0;
+    }
+
+    .section3-footer form{
+        justify-content: center;
+    }
+
+    .section3-footer form input{
+        padding-right: 80%;
+    }
+
+    .copyright-desktop {
+        display: none;
+    }
+
+    .copyright-mobile {
+        order: 3;
+        display: block;
+        font-size: 12.5px;
+        padding-top: 8%;
+        color: #8C8C94;
+    }
+}
+/*fin estilos del footer*/

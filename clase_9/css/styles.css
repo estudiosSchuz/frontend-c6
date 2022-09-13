@@ -5,7 +5,6 @@ body {
   font-size: 16px;
   line-height: 19px;
   margin: 0px;
-  box-sizing: border-box;
   background-color: whitesmoke;
 }
 
@@ -57,22 +56,22 @@ footer {
 main {
     display: flex;
     justify-content:space-around;
-    padding: 50px 0px;
+    align-items: center;
+    padding: 40px 0px;
 }
 .h2-div {
     margin-left: 20px;
     margin-top: 30px;
 }
+
 .h2-delivery {
-    display: inline;
     font-size: 30px;
+    display: flex;
 }
 
-.delivery {
+.img-moto {
+    width: 650px;
     border-radius: 5px;
-    background-image: url(./img/delivery.jpg);
-    background-repeat: no-repeat;
-    width: 40%;
 }
 
 ol{
@@ -102,4 +101,6 @@ ol{
 
 .pizza {
     margin-left: 100px;
+    width: 350px;
+    height: 350px;
 }
