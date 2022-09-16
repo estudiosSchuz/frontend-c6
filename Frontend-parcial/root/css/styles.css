@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap%27);
-/*estilos generales: botones,body,titulos*/
 
+/*estilos generales: botones,body,titulos*/
 * {
     box-sizing: border-box;
 }
@@ -95,26 +95,6 @@ header {
     font-size: 3rem;
     display: none;
 }
-
-@media(max-width:480px){
-    header {
-        justify-content: space-between;
-        padding: 10% 11% 0 11%;
-        height: 20%;
-    }
-
-    #button-mobile {
-        display: none;
-    }
-    
-    header nav {
-        display: none;
-    }
-
-    .fa-bars {
-        display: block;
-    }
-}
 /*fin estilos del header*/   
 
 
@@ -144,35 +124,6 @@ main {
 
 .main-section-2 img{
     width: 100%;
-}
-
-@media(max-width:480px){
-
-    main {
-        flex-direction: column-reverse;
-        padding: 0;
-    }
-
-    .main-section-2{
-        padding: 0 11% 40% 11%;
-    }
-
-    .main-section-1{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        width: 100vw;
-        padding-bottom: 25%;
-    }   
-
-    .main-section-1 h1{
-        font-size: 50px;
-    }
-
-    .main-section-1 p{
-        text-align: center;
-        width: 72%;
-    }
 }
 /*fin estilos del main*/
 
@@ -231,38 +182,6 @@ h5 {
     color: #B3B2B7;
     padding-bottom: 12px;
 }
-
-@media(max-width:480px){
-    .section-2 {
-        flex-direction: column;
-        padding: 0;
-    }    
-
-    .art1-section-2{
-        text-align: center;
-        padding-bottom: 90px;
-    }
-
-    .art1-section-2 p{
-        padding: 3% 9% 0 9%;
-    }
-
-    .div-art2-sect2{
-        padding: 0;
-    }
-
-    .div-art2-sect2 h5{
-        background-color: #e7c9ff;
-        border-radius: 40px 0 0 40px;
-        padding: 10px 0;
-        margin-left: 40px;
-    }
-
-    .p-art2-section2 {    
-        padding: 10px 40px 10px 40px;
-        text-align: left;
-    }
-}
 /*fin estilos de la primera section*/
 
 
@@ -311,16 +230,6 @@ h5 {
     position: relative;
     top: 12%;
     width: 70px;
-}
-
-@media(max-width:480px){
-    .desktop-card {
-        display: none;
-    }
-
-    .button-cards {
-        margin-bottom: 5%;
-    }
 }
 /*fin estilos de la section Cards*/
 
@@ -433,8 +342,130 @@ footer {
 .copyright-mobile {
     display: none;
 }
+/*fin estilos del footer*/
 
+
+/*Html en construccion*/
+.en-contruccion {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.en-contruccion h1 {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 80%;
+    font-size: 60px;
+}
+
+.en-contruccion img {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+/*Fin Html en construccion*/
+
+
+/*Media*/
 @media(max-width:480px){
+    header {
+        justify-content: space-between;
+        padding: 10% 11% 0 11%;
+        height: 20%;
+    }
+
+    #button-mobile {
+        display: none;
+    }
+    
+    header nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+
+    main {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .main-section-2{
+        padding: 0 11% 40% 11%;
+    }
+
+    .main-section-1{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        padding-bottom: 25%;
+    }   
+
+    .main-section-1 h1{
+        font-size: 50px;
+    }
+
+    .main-section-1 p{
+        text-align: center;
+        width: 72%;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        padding: 0;
+    }    
+
+    .art1-section-2{
+        text-align: center;
+        padding-bottom: 90px;
+    }
+
+    .art1-section-2 p{
+        padding: 3% 9% 0 9%;
+    }
+
+    .div-art2-sect2{
+        padding: 0;
+    }
+
+    .div-art2-sect2 h5{
+        background-color: #e7c9ff;
+        border-radius: 40px 0 0 40px;
+        padding: 10px 0;
+        margin-left: 40px;
+    }
+
+    .p-art2-section2 {    
+        padding: 10px 40px 10px 40px;
+        text-align: left;
+    }
+
+
+    .desktop-card {
+        display: none;
+    }
+
+    .button-cards {
+        margin-bottom: 5%;
+    }
+
+
+    .section3 {
+        flex-direction: column;
+        padding-bottom: 10%;
+        background-color: #8B48BF;
+    }
+    .section3 h2 {
+        text-align: center;
+        width: 95%;
+    }
+
+
     footer {
         display: flex;
         flex-direction: column;
@@ -492,4 +523,4 @@ footer {
         color: #8C8C94;
     }
 }
-/*fin estilos del footer*/
+/*Fin media*/
